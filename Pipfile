@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+transformers = "*"
+pandas = "*"
+requests = "*"
+librosa = "*"
+numpy = "*"
+soundfile = "*"
+datasets = "*"
+scikit-learn = "*"
+torch = "*"
+evaluate = "*"
+tqdm = "*"
+matplotlib = "*"
+silero-vad = "*"
+ipykernel = "*"
+ffmpeg = "*"
+jiwer = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
