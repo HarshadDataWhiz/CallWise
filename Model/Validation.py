@@ -46,6 +46,7 @@ def validation(model , processor, transcript_json, file_list, ROOT_FOLDER = "." 
                 "prediction": predicted_text,
                 "ground_truth": ground_truth,
                 "wer": wer_score
+                "error": None
             })
 
         except Exception as e:
