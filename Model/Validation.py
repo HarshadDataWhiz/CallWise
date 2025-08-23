@@ -45,7 +45,7 @@ def validation(model , processor, transcript_json, file_list, ROOT_FOLDER = "." 
                 "filename": file,
                 "prediction": predicted_text,
                 "ground_truth": ground_truth,
-                "wer": wer_score
+                "wer": wer_score,
                 "error": None
             })
 

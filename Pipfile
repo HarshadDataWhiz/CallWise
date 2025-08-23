@@ -10,7 +10,6 @@ requests = "*"
 librosa = "*"
 numpy = "*"
 soundfile = "*"
-datasets = "*"
 scikit-learn = "*"
 torch = "*"
 evaluate = "*"
@@ -20,6 +19,10 @@ silero-vad = "*"
 ipykernel = "*"
 ffmpeg = "*"
 jiwer = "*"
+datasets = {extras = ["audio"], version = "*"}
+torchcodec = "*"
+accelerate = ">=0.26.0"
+tensorboard = "*"
 
 [dev-packages]
 
