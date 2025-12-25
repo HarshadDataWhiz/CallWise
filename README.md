@@ -85,5 +85,39 @@ These experiments enable data-driven optimization of ASR performance and informe
 - Generates call-level transcripts separating calling agent and customer speech
 
 
+# Model Training Experiments: Hyperparameter Impact Analysis
+### Learning Rate Sensitivity Analysis
+
+![Learning Rate vs WER](Training_stats/plots/Learning_rate_comparison.png)
+
+**Key Insight:**  
+There exists a *sweet spot* learning rate that balances:
+- Fast convergence
+- Stable optimization
+- Lower final WER
+
+Note: Based on empirical observations, the optimal learning rate (“sweet spot”) is model-size dependent. Larger models typically require lower learning rates for stable and effective training.
+
+###  LoRA Adapter Rank Comparison
+
+![Learning Rate vs WER](Training_stats/plots/LORA_Rank_comparison.png)
+
+**Key Insight:**  
+Increasing LoRA rank improves performance up to a point, after which:
+- Gains saturate
+- Compute and memory costs increase disproportionately
+
+###  MOdel Size comparison
+
+![Learning Rate vs WER](Training_stats/plots/Model_size_comparison.png)
+
+**Key Insight:**  
+Larger model capacity enables better acoustic and linguistic modeling, but at the cost of:
+- Higher GPU memory usage
+- Longer training time
+
+Model selection should therefore consider **deployment constraints** alongside accuracy requirements.
+
+
 
 
